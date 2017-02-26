@@ -29,6 +29,12 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  # - flickraw
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# flickr:
+#   screen_name: ondrejkascak
+#   api_key: f5ca96b6b6946883b72b52f0b324d04e
+#   api_secret: 749c32e5d33bf0da
