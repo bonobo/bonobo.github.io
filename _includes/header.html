@@ -6,6 +6,13 @@
 
 	<title>{{ page.title }}</title>
 
+	{% if page.slider_active %}
+		<!-- Slider CSS -->
+		<link rel="stylesheet" href="/ideal_is/ideal-image-slider.css">
+		<link rel="stylesheet" href="/ideal_is/default.css">
+	{% endif %}
+
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -16,25 +23,4 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
-
-	<!-- <script>
-		function myFunction() {
-			$(".nav.navbar-nav li").on("click", function() {
-				// e.preventDefault();
-				$(".nav.navbar-nav li").removeClass("active");
-				$(this).addClass("active");
-			});
-		}
-		$(document).ready(myFunction);
-
-		function myFunction2() {
-			$(".nav.nav-pills.nav-stacked li").on("click", function() {
-				// e.preventDefault();
-				$(".nav.nav-pills.nav-stacked li").removeClass("active");
-				$(this).addClass("active");
-			});
-		}
-		$(document).ready(myFunction2);
-	</script> -->
-
 </head>

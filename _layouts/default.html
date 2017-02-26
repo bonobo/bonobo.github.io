@@ -19,7 +19,7 @@
 				<ul class="nav navbar-nav">
 					{% if page.currentSite == 'home' %}
 						{% include active.html homeActive="active" aboutActive="" wp="" blog="" %}
-					{% elsif page.currentSite == 'aboutMe' %}
+					{% elsif page.currentSite == 'aboutMe' or page.currentSite == 'gallery' %}
 						{% include active.html homeActive="" aboutActive="active" wp="" blog="" %}
 					{% elsif page.currentSite == 'wp' %}
 						{% include active.html homeActive="" aboutActive="" wp="active" blog="" %}
@@ -36,6 +36,22 @@
 
 	<!-- Include of footer -->
 	{% include footer.html %}
+
+	{% if page.slider_active %}
+		<!-- Slider -->
+		<script src="/ideal_is/ideal-image-slider.js"></script>
+		<script src="/ideal_is/iis-captions.js"></script>
+		<!-- Sliders on pages -->
+		{% for script in page.slider_scripts %}
+			{{ script }}
+		{% endfor %}
+		<!-- Sliders on indexes -->
+		{% for post in paginator.posts %}
+			{% for script in post.slider_scripts %}
+				{{ script }}
+			{% endfor %}
+		{% endfor %}
+	{% endif %}
 
 </body>
 

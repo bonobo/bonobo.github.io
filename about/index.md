@@ -4,7 +4,7 @@ title: O mne
 currentSite: aboutMe
 ---
 
-Prajem pekný deň, ako ste si možno všimli volám sa Ondrej Kaščák. Pochádzam z najvýchodnejšieho mesta na Slovensku, zo [**Sniny**](http://www.snina.sk/) a  mám dvoch starších súrodencov.
+Prajem pekný deň, ako ste si možno všimli volám sa Ondrej Kaščák. Pochádzam z najvýchodnejšieho mesta na Slovensku, zo [**Sniny**](http://www.snina.sk/){:target="_blank"} a  mám dvoch starších súrodencov.
 
 Momentálne študujem na Fakulte informatiky a informačných technológií STU v Bratislave v bakalárskom odbore informatika.
 
