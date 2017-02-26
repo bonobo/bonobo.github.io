@@ -25,6 +25,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+slider_array: []
 markdown: kramdown
 theme: minima
 gems:
@@ -38,4 +39,3 @@ exclude:
 #   screen_name: ondrejkascak
 #   api_key: f5ca96b6b6946883b72b52f0b324d04e
 #   api_secret: 749c32e5d33bf0da
-slider_array: []
