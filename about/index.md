@@ -1,6 +1,7 @@
 ---
 layout: personal
 title: O mne
+currentSite: aboutMe
 ---
 
 Prajem pekný deň, ako ste si možno všimli volám sa Ondrej Kaščák. Pochádzam z najvýchodnejšieho mesta na Slovensku, zo [**Sniny**](http://www.snina.sk/) a  mám dvoch starších súrodencov.

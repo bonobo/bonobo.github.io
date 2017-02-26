@@ -17,20 +17,26 @@
 			</div>
 			<div class="collapse navbar-collapse" id="default_nav">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li><a href="/about">O mne</a></li>
-					<li><a href="/wp">Webové publikovanie</a></li>
-					<li><a href="#">Blog</a></li>
+					{% if page.currentSite == 'home' %}
+						{% include active.html homeActive="active" aboutActive="" wp="" blog="" %}
+					{% elsif page.currentSite == 'aboutMe' %}
+						{% include active.html homeActive="" aboutActive="active" wp="" blog="" %}
+					{% elsif page.currentSite == 'wp' %}
+						{% include active.html homeActive="" aboutActive="" wp="active" blog="" %}
+					{% elsif page.currentSite == 'blog' %}
+						{% include active.html homeActive="" aboutActive="" wp="" blog="active" %}
+					{% endif %}
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 	<!-- Content -->
-		{{ content }}
+	{{ content }}
 
 	<!-- Include of footer -->
 	{% include footer.html %}
+
 </body>
 
 </html>
