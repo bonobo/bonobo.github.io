@@ -19,7 +19,7 @@
 				<ul class="nav navbar-nav">
 					{% if page.currentSite == 'home' %}
 						{% include active.html homeActive="active" aboutActive="" wp="" blog="" %}
-					{% elsif page.currentSite == 'aboutMe' or page.currentSite == 'gallery' %}
+					{% elsif page.currentSite == 'aboutMe' or page.currentSite == 'gallery' or page.currentSite == 'cv' %}
 						{% include active.html homeActive="" aboutActive="active" wp="" blog="" %}
 					{% elsif page.currentSite == 'wp' %}
 						{% include active.html homeActive="" aboutActive="" wp="active" blog="" %}
@@ -36,7 +36,7 @@
 
 	<!-- Include of footer -->
 	{% include footer.html %}
-	
+
 </body>
 
 </html>

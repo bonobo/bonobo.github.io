@@ -1,0 +1,53 @@
+---
+layout: personal
+title: Galéria
+currentSite: gallery
+---
+
+<p>Ako som spomínal fotografovanie patrí medzi moje obľúbené činnosti. Fotím hlavne prírodu, akcie s kamarátom a samozrejme rodinné oslavy :).</p>
+
+<p>Väčšina fotiek prírody v tejto galérii bola odfotená v oblasti obce <a href="http://www.runina.sk/" target="_blank"><b>Runina</b></a>, ktorá sa nachádza v národnom parku <a href="http://www.sopsr.sk/nppoloniny/sk/uvod.php" target="_blank"><b>Poloniny</b></a>.</p>
+
+<p>Technika:</p>
+<ul>
+  <li>Nikon D3100</li>
+  <li>Objektív: Nikkor 18 - 100</li>
+  <li>Softvér: Adobe Lightroom</li>
+</ul>
+
+<!-- inspired by w3c tutorial -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- first photo must be added manually -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+      <img src="https://goo.gl/j2ZiQi" alt="Ďurkovec">
+      <div class="carousel-caption">
+        <h3>Ďurkovec</h3>
+      </div>
+    </div>
+
+    <!-- other photos are aded in for loop -->
+    {% for photo in site.data.photo_list %}
+      {% if photo.no != 1 %}
+        <div class="item">
+          <img src="{{ photo.link }}" alt="{{ photo.name }}">
+          <div class="carousel-caption">
+            <h3>{{ photo.name }}</h3>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Predchádzajúca</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Ďalšia</span>
+  </a>
+</div>
