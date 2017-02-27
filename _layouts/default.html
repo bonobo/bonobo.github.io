@@ -36,23 +36,7 @@
 
 	<!-- Include of footer -->
 	{% include footer.html %}
-
-	<!-- {% if page.slider_active %} -->
-		<!-- Slider -->
-		<script src="/ideal_is/ideal-image-slider.js"></script>
-		<script src="/ideal_is/iis-captions.js"></script>
-		<!-- Sliders on pages -->
-		{% for script in page.slider_scripts %}
-			{{ script }}
-		{% endfor %}
-		<!-- Sliders on indexes -->
-		{% for post in paginator.posts %}
-			{% for script in post.slider_scripts %}
-				{{ script }}
-			{% endfor %}
-		{% endfor %}
-	<!-- {% endif %} -->
-
+	
 </body>
 
 </html>
