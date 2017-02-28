@@ -22,14 +22,16 @@ currentSite: gallery
   <div class="carousel-inner" role="listbox">
 
     <div class="item active">
-      <img src="https://goo.gl/j2ZiQi" alt="Ďurkovec">
+      <img src="https://goo.gl/FGFf7k" alt="Ďurkovec">
       <div class="carousel-caption">
         <h3>Ďurkovec</h3>
       </div>
     </div>
 
+    <!-- first sort photo list according names -->
+    {% assign photos = site.data.photo_list | sort: 'name' %}
     <!-- other photos are aded in for loop -->
-    {% for photo in site.data.photo_list %}
+    {% for photo in photos %}
       {% if photo.no != 1 %}
         <div class="item">
           <img src="{{ photo.link }}" alt="{{ photo.name }}">
@@ -39,7 +41,6 @@ currentSite: gallery
         </div>
       {% endif %}
     {% endfor %}
-
   </div>
 
   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
