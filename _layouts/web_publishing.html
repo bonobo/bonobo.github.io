@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="container" style="margin-top:70px">
+    <div class="well">
+        <ul class="nav nav-tabs">
+          {% if page.wpSite == 'wp' %}
+            {% include tabs_active.html wp="active" assgnmt1="" assgnmt2="" assgnmt3="" %}
+          {% elsif page.wpSite == 'assgnmt1' %}
+            {% include tabs_active.html wp="" assgnmt1="active" assgnmt2="" assgnmt3="" %}
+          {% elsif page.wpSite == 'assgnmt2' %}
+            {% include tabs_active.html wp="" assgnmt1="" assgnmt2="active" assgnmt3="" %}
+          {% elsif page.wpSite == 'assgnmt3' %}
+            {% include tabs_active.html wp="" assgnmt1="" assgnmt2="" assgnmt3="active" %}
+          {% endif %}
+        </ul>
+        {{ content }}
+    </div>
+</div>

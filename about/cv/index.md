@@ -12,7 +12,7 @@ currentSite: cv
 ### Prax:
 * 2010: odborná prax v reklamnej agentúre DMRS
 
-* 2012: 2 týždňová odborná prax v Londýne vo firme [TiffinSolutions](http://www.tiffinsolutions.com/){:target="_blank"}
+* 2012: 2 týždňová odborná prax v Londýne vo firme [TiffinSolutions][tiffin]{:target="_blank"}
 
 ### Programovanie
 * momentálne všetky moje skúsenosti s programovaním súvisia s tvorbou projektov v rámci predmetov na FIIT
@@ -34,3 +34,5 @@ currentSite: cv
 * vďaka predmetu WPUB používanie git a GitHub
 
 <i class="devicon-c-line colored"></i> <i class="devicon-java-plain-wordmark colored"></i> <i class="devicon-postgresql-plain-wordmark colored"></i> <i class="devicon-redis-plain-wordmark colored"></i> <i class="devicon-cplusplus-line colored"></i> <i class="devicon-python-plain-wordmark colored"></i> <i class="devicon-html5-plain-wordmark colored"></i> <i class="devicon-css3-plain-wordmark colored"></i> <i class="devicon-bootstrap-plain-wordmark colored"></i> <i class="devicon-git-plain-wordmark colored"></i> <i class="devicon-github-plain-wordmark colored"></i>
+
+[tiffin]: http://www.tiffinsolutions.com/
