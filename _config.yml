@@ -6,8 +6,13 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-maps
   # - flickraw
 gems: [jekyll-youtube]
+
+maps:
+  google:
+    api_key: AIzaSyCpj6PQg2IPjpw0U1Q981y3JcxAePgPL0c
 
 exclude:
   - Gemfile
