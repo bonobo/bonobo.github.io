@@ -50,12 +50,12 @@ Riešením tohto zadania je práve táto webová stránka.
 * layout pre galériu **gallery_layout.html**
   * v úvode je rozdelený na polovicu, v ľavej časti sa nachádza základný popis o galérii, motivácii fotiť a použitej technike
   * v pravej časti sa potom nachádza Google mapa zobrazujúca oblasti kde  boli odfotené fotografie v galérii
-    * používateľ môže pridať ďalšie body na mape jednoduchým pridaním záznamu do súboru **locations.yml** nachádzajúceho sa v **_data/gallery_points** priečinku
+    * používateľ môže pridať ďalšie body na mape jednoduchým pridaním záznamu do súboru **locations.yml** nachádzajúceho sa v priečinku **_data/gallery_points**
   * nasledujú samotné fotografie s popisom v pravej časti
     * galérie sú pridávané pomocou `for` cyklu, prechádzaním súboru **galleries.yml** obsahujúceho informácie o galérii ako: názov, popis a názov súboru obsahujúceho samotné fotografie s použitím plugin-u
-      * tento súbor (v mojom prípade **nature.md**) sa musí nachádzať v priečinku **_includes**, potom sa pomocou príkazu `include` pridá na stránku
+      * tento súbor (v mojom prípade **nature.md** a **cars.md**) sa musí nachádzať v priečinku **_includes** a potom sa pomocou príkazu `include` pridá na stránku
 * layout **personal.html**
-  * je určený pre podstránky **O mne** a **CV**
+  * je určený pre podstránky **O mne**, **CV** a **Projekty**
   * v ľavej časti sa nachádza navigačný panel pre prepínanie medzi sekciami, prepínanie **active** stavu jednotlivých tab-ov riešené podobne ako v **default.html** layout-e
   * pravá časť obsahuje obsah stránky, v prípade, že sa nachádzame na stránke **O mne** sa pridá aj profilová fotografia
 * layout **post.html**
