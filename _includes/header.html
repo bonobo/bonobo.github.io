@@ -2,9 +2,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="shortcut icon" type="image/jpg" href="/img/monkey.jpg" />
+	<link rel="shortcut icon" type="image/jpg" href="/assets/img/monkey.jpg" />
 
-	<title>{{ page.title }}</title>
+	{% if page.subtitle %}
+		<title>{{ site.nick | append: ' - ' | append: page.subtitle}}</title>
+	{% else %}
+		<title>{{ site.site_name }}</title>
+	{% endif %}
+
+	{% if page.slider_active %}
+		<!-- Slider CSS -->
+		<link rel="stylesheet" href="/ideal_is/ideal-image-slider.css">
+		<link rel="stylesheet" href="/ideal_is/default.css">
+	{% endif %}
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,4 +28,5 @@
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
 	<link rel="stylesheet" type="text/css" href="/css/main.css">
+
 </head>

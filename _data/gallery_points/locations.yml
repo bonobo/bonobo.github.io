@@ -1,0 +1,35 @@
+- title: "Snina"
+  url: https://www.google.sk/
+  location:
+    latitude: 48.987761
+    longitude: 22.157124
+
+- title: "Runina"
+  url: https://www.google.sk/
+  location:
+    latitude: 49.071610
+    longitude: 22.401893
+
+- title: "Bidovce"
+  url: https://www.google.sk/
+  location:
+    latitude: 48.736433
+    longitude: 21.438974
+
+- title: "Kremenec"
+  url: https://www.google.sk/
+  location:
+    latitude: 49.087457
+    longitude: 22.558908
+
+- title: "Michalovce"
+  url: https://www.google.sk/
+  location:
+    latitude: 48.755655
+    longitude: 21.917464
+
+- title: "Tatry"
+  url: https://www.google.sk/
+  location:
+    latitude: 49.166292
+    longitude: 20.120237

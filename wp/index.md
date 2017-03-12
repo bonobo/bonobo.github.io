@@ -1,6 +1,6 @@
 ---
 layout: web_publishing
-title: WP
+subtitle: Webové publikovanie
 currentSite: wp
 wpSite: wp
 ---
@@ -16,7 +16,7 @@ Hlavnou náplňou predmetu sú XML a súvisiace technológie. Podrobnejšie: zí
 doc. RNDr. Petr Šaloun, PhD.
 
 ### Cvičiaci:
-Ing. Marián Šimko, PhD. 
+Ing. Marián Šimko, PhD.
 
 
 [fiit]: http://www.fiit.stuba.sk/

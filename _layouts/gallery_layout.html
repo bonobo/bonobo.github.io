@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<!-- Here user defines content by using this layout, this could be something like description of used camera, passion, motivation etc. -->
+
+<div class="container-fluid" style="margin-top:70px">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well">
+        <h1>{{ page.subtitle }}</h1>
+        {{ content }}
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="well">
+        <h1>Mapa</h1>
+        {% google_map src="_data/gallery_points" width="100%" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- And then galleries will be generated from .yml file where are placed informations for each gallery -->
+
+<div class="container-fluid">
+    {% for gallery in site.data.galleries %}
+      {% if gallery.published %}
+        <div class="well">
+          <div class="row">
+            <div class="col-md-9">
+                <h1>{{ gallery.name }}</h1>
+                {% include {{ gallery.include }} %}
+            </div>
+            <div class="col-md-3">
+                <h1>Popis</h1>
+                <p>{{ gallery.description }}</p>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Spustenie stránky"
+subtitle: Spustenie stránky
 date: 2017-02-21
 permalink: /blog/:year/:month/:day/:title
 currentSite: blog

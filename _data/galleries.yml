@@ -1,0 +1,12 @@
+# Here user defines basic info about each gallery which could be published at page
+
+- name: Príroda
+  include: nature.md
+  published: true
+  description: "Prevažná časť týchto fotografií vznikla počas túlania sa v okolí obce Runina a túre na Kremenec.
+  Fotka hviezdnej oblohy bola odfotená s expozičným časom 30 minút."
+
+- name: Autá
+  include: cars.md
+  published: true
+  description: "Všetky tieto fotografie vznikli na zrazoch, na ktorých som bol s mojim výborným kamarátom Tonom, ktorý je veľký fanúšik auto-moto športu."

@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<div class="jumbotron">
-  <h1>{{ page.title }} - {{ page.date | date_to_string }}</h1>
-    {{ content }}
+<div class="container" style="margin-top:70px">
+    <div class="jumbotron">
+        <h1>{{ page.subtitle }} - {{ page.date | date_to_string }}</h1> {{ content }}
+    </div>
 </div>
