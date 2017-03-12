@@ -1,10 +1,7 @@
 ---
 layout: personal
-title: O mne
+subtitle: O mne
 currentSite: aboutMe
-location:
-  latitude: 51.5285582
-  longitude: -0.2416807
 ---
 
 Prajem pekný deň, ako ste si možno všimli volám sa Ondrej Kaščák. Pochádzam z najvýchodnejšieho mesta na Slovensku, zo [**Sniny**][snina]{:target="_blank"} a  mám dvoch starších súrodencov.
@@ -18,6 +15,6 @@ Medzi moje záľuby patrí:
 * kvalitné filmy a seriály
 * hudobné festivaly
 
-{% google_map %}
+{% google_map src="_data/my_points" width="100%" %}
 
 [snina]: http://www.snina.sk/
