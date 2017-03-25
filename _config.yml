@@ -14,17 +14,17 @@ navbar:
 
 
 # Build settings
-slider_array: []
+# slider_array: []
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
-  - jekyll-maps
-  - jekyll-youtube
+  # - jekyll-maps
+  # - jekyll-youtube
 
-maps:
-  google:
-    api_key: AIzaSyCpj6PQg2IPjpw0U1Q981y3JcxAePgPL0c
+# maps:
+#   google:
+#     api_key: AIzaSyCpj6PQg2IPjpw0U1Q981y3JcxAePgPL0c
 
 exclude:
   - Gemfile

@@ -15,6 +15,6 @@ Medzi moje záľuby patrí:
 * kvalitné filmy a seriály
 * hudobné festivaly
 
-{% google_map src="_data/my_points" width="100%" %}
+<!-- {% google_map src="_data/my_points" width="100%" %} -->
 
 [snina]: http://www.snina.sk/
