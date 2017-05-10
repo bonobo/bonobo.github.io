@@ -13,7 +13,7 @@ Analyzujte možnosti zápisu jednoduchej prezentácie v jazyku XML. Identifikujt
 Navrhnite a vytvorte XSLT šablóny pre konverziu prezentácie z XML do XHTML+CSS a pre konverziu prezentácie z XML do PDF. Klaďte dôraz na znovupoužitie jednotlivých šablon pre viaceré výstupné formáty. Umožnite zadávanie parametrov transformácií.
 
 ## Riešenie:
-Za pomoci XML som vytvoril jednoduchú ukážkovú prezentáciu, ktorá prezentuje rôzne typy slajdov. Súčasťou riešenia je aj XSL súbor popisujúci transformáciu vytvorenej XML prezentácie do jednotlivých súborov vo formáte XHTML. Na dodatočné formátovanie bolo použité CSS a vytvorená XML prezentácia je validná podľa vytvorenej schémy v RELAX NG.
+Za pomoci XML som vytvoril jednoduchú ukážkovú prezentáciu, ktorá prezentuje rôzne typy slajdov. Súčasťou riešenia je aj XSL súbor popisujúci transformáciu vytvorenej XML prezentácie do jednotlivých súborov vo formáte XHTML. Na dodatočné formátovanie bolo použité CSS a vytvorená XML prezentácia je validná podľa vytvorenej schémy v RELAX NG. Taktiež bol vytvorený XSL súbor na transformáciu XML prezentácie pomocou fo objektov do PDF.
 
 ### Typy slajdov:
 * automaticky generovaná titulná strana z meta informácií XML prezentácie
@@ -37,7 +37,7 @@ Za pomoci XML som vytvoril jednoduchú ukážkovú prezentáciu, ktorá prezentu
 * prezentácia v XML sa nachádza v súbore **presentation.xml** a ako bolo spomínané je validná podľa vytvorenej schémy v RELAX NG, ktorá je definovaná v súbore **relax_schema.rng**
 * na validáciu bol použitý **JING** validátor
 
-### XSL transformácia:
+### XSL transformácia do XHTML:
 * XSLT pre vytvorenú XML prezentáciu sa nachádza v súbore **presentation.xsl**
 * pri jej tvorbe som sa snažil o "modulárny" prístup v tom zmysle, že v rámci XSL je vytvorených viacero šablón (template), ktoré sú aplikované podľa potreby a výskytu jednotlivých elementov v XML
 * automaticky generované sú čísla strán slajdov, obsah a titulná strana prezentácie
@@ -45,7 +45,13 @@ Za pomoci XML som vytvoril jednoduchú ukážkovú prezentáciu, ktorá prezentu
 * po transformácii nám vzniknú samostatné XHTML súbory jednotlivých slajdov
 * pri transformácii pomocou **SAXON** je možné uviesť parametre transformácie `color`, `font`, `paging`, ktorými má používateľ možnosť zmeniť základné nastavenia farby pozadia titulnej strany a nadpisov, zmeniť použitý font pre celú prezentáciu a vypnúť číslovanie strán, ktoré je defaultne zapnuté. Ak ich používateľ nezadá použíjú sa základné nastavenia.
 
-### Ukážky slajdov:
+### XSL transformácia do PDF:
+* XSL pre transformáciu do PDF sa nachádza v súbore **pres-fo.xsl**
+* štruktúra tohto súboru je takmer identická s XSLT transformáciou do XHTML a priamo z nej vychádza
+* samozrejmým rozdielom je použite formátovacích objektov miesto pred tým použítých HTML tagov
+* na transformáciu bol použitý **pdf_xep.bat**, ktorý sme využívali aj pri generovaní Docbook PDF dokumentu
+
+### Ukážky XHTML slajdov:
 * [**Titulná strana**][titlepage]{:target="_blank"}
 * [**Obsah prezentácie**][contents]{:target="_blank"}
 * [**Slajd s odsekmi textu**][2]{:target="_blank"}
