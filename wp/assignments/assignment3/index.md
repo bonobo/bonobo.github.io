@@ -47,6 +47,16 @@ Za pomoci XML som vytvoril jednoduchú ukážkovú prezentáciu, ktorá prezentu
 
 ### Ukážky slajdov:
 * [**Titulná strana**][titlepage]{:target="_blank"}
+* [**Obsah prezentácie**][contents]{:target="_blank"}
+* [**Slajd s odsekmi textu**][2]{:target="_blank"}
+* [**Slajd nečíslovaným zoznamom**][3]{:target="_blank"}
+* [**Slajd s číslovaným zoznamom**][4]{:target="_blank"}
+* [**Slajd s obrázkom**][5]{:target="_blank"}
 
 
 [titlepage]: /assets/files/titlepage.xhtml
+[contents]: /assets/files/1.xhtml
+[2]: /assets/files/2.xhtml
+[3]: /assets/files/3.xhtml
+[4]: /assets/files/4.xhtml
+[5]: /assets/files/5.xhtml
